@@ -10,8 +10,7 @@ pipeline{
                          --node-type t2.micro 
                          --nodes 2 
                          --ssh-access 
-                         --ssh-public-key=ssh-jump-box 
-                         --tags Description="Udacity Capstone EKS Cluster" Name="EKSUdacityCapstone" 
+                         --ssh-public-key=ssh-jump-box
                      '''
             }
             post{
