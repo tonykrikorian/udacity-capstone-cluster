@@ -4,7 +4,7 @@ pipeline{
         stage("Creating AWS EKS Cluster"){
             steps{
                  echo "========Creating AWS EKS Cluster========"
-                 sh ''' eksctl create cluster --name EKSUdacityCapstone  
+                 sh ''' eksctl create cluster --name EKSUdacityCapstone-01  
                          --region us-west-2 
                          --nodegroup-name linux-nodes 
                          --node-type t2.micro 
