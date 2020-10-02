@@ -13,19 +13,6 @@ pipeline{
                     --tags Description="Udacity Capstone EKS Cluster" Name="EKSUdacityCapstone" 
                     '''
             }
-            post{
-                always{
-                    echo "========always========"
-                }
-                success{
-                    echo "========A executed successfully========"
-                    kubectl cluster-info
-                    kubectl get nodes
-                }
-                failure{
-                    echo "========A execution failed========"
-                }
-            }
         }
     }
     
